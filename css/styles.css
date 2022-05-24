@@ -1,0 +1,124 @@
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+
+/* #303030
+#FFFFFF
+#9DA4BD
+#FF6C00
+#F7F7F7
+#000000
+#555555
+#111319
+#191C26
+#C4C4C4
+rgba(157, 164, 189, 0.12)
+rgba(157, 164, 189, 0.6)
+rgba(157, 164, 189, 0.4)
+rgba(25, 28, 38, 0.2) */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Остальной код */
+
+:root {
+    /* ============= FONTS =========== */
+    --main-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;   
+
+    /* =========== DARK THEME ======== */
+    --primary-dark-text: #FFFFFF;
+    --secondary-dark-text:rgba(157, 164, 189, 0.6);
+
+    --primary-dark-bg:#191C26;
+    --secondary-dark-bg:#F7F7F7;
+
+    /* =========== LIGHT THEME ======= */
+    --accent-text-clr:#FF6C00;
+    --primary-light-text:#555555;
+    --secondary-light-text:#303030;
+
+    --primary-light-bg:#FFFFFF;
+    --secondary-light-bg:#F7F7F7;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--primary-light-text);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.subtitle {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary-light-text);
+}
+
+.title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+    color: var(--secondary-light-text);
+}
+
+.main-btn {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--primary-dark-text);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* =================== HEADER ==================== */
+
+.header {
+    background-color: var(--primary-dark-bg);
+}
+
+.nav-link,
+.header-phone {
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--primary-dark-text);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-text-clr);
+}
+
+.header-phone {
+    text-transform: uppercase;
+}
+
+.header-phone:hover,
+.header-phone:focus {
+    color: var(--accent-text-clr);
+}
