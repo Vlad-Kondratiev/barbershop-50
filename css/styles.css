@@ -47,8 +47,24 @@ body {
     color: var(--primary-light-text);
 }
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: var(--accent-text-clr);
+}
+
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -75,13 +91,19 @@ body {
 }
 
 .main-btn {
-    font-family: var(--main-font);
+    max-width: 320px;
+    min-width: 160px;
+    padding: 12px 20px;
+    
+    font-family: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: var(--primary-dark-text);
+    border: 1px solid rgba(255, 108, 0, 1);
+    border-radius: 25px;
     background-color: transparent;
     cursor: pointer;
 }
@@ -89,7 +111,13 @@ body {
 /* =================== HEADER ==================== */
 
 .header {
+    /* background-color: var(--primary-dark-bg); */
+}
+
+.header-container {
     background-color: var(--primary-dark-bg);
+    display: flex;
+    align-items: center;
 }
 
 .nav-link,
@@ -102,9 +130,36 @@ body {
     color: var(--primary-dark-text);
 }
 
+.header-phone {
+    margin-right: 40px;
+}
+
+.header-link {
+    margin-right: 70px;
+}
+
 .nav-link:hover,
 .nav-link:focus {
     color: var(--accent-text-clr);
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-item:last-child {
+    margin: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .header-phone {
@@ -114,4 +169,30 @@ body {
 .header-phone:hover,
 .header-phone:focus {
     color: var(--accent-text-clr);
+}
+
+.header-btn:hover,
+.header-btn:focus {
+    background-color: var(--accent-text-clr);
+}
+
+/* ================= HERO ================== */
+
+.hero {
+    background-color: var(--primary-dark-bg);
+}
+
+/* ================ GALERY ================= */
+
+.galery-list {
+    display: flex;
+    width: 100%;
+}
+
+.test-header {
+    background-color: var(--primary-dark-bg);
+}
+
+.footer-test {
+    background-color: var(--accent-text-clr);
 }
