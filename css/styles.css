@@ -52,13 +52,17 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 0;
 }
 
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: var(--accent-text-clr);
 }
 
 .list {
@@ -71,6 +75,17 @@ h1, h2, h3, h4, h5, h6, p {
     text-decoration: none;
 }
 
+.upper-title {
+    margin-bottom: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--secondary-light-text);
+}
+
 .subtitle {
     font-family: var(--main-font);
     font-weight: 600;
@@ -81,12 +96,38 @@ h1, h2, h3, h4, h5, h6, p {
     color: var(--secondary-light-text);
 }
 
+.upper-title-mode-dark {
+    color: var(--secondary-dark-text);
+}
+
+.upper-title-mode-light {
+    color: var(--secondary-light-text);
+}
+
 .title {
+    margin-bottom: 20px;
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 42px;
     line-height: 1.17;
     letter-spacing: 0.05em;
+    color: var(--secondary-light-text);
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.7;
+    letter-spacing: 0.02em;
+    color: var(--primary-light-text);
+}
+
+.subtitle-mode-dark {
+    color: var(--secondary-dark-text);
+}
+
+.subtitle-mode-light {
     color: var(--secondary-light-text);
 }
 
@@ -111,11 +152,13 @@ h1, h2, h3, h4, h5, h6, p {
 /* =================== HEADER ==================== */
 
 .header {
-    /* background-color: var(--primary-dark-bg); */
+    background-color: var(--primary-dark-bg);
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-container {
-    background-color: var(--primary-dark-bg);
+    
     display: flex;
     align-items: center;
 }
@@ -182,6 +225,95 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: var(--primary-dark-bg);
 }
 
+.hero-title {
+    margin-bottom: 20px;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: var(--primary-dark-text);
+}
+
+.hero-list {
+    display: flex;
+    align-items: center;
+}
+
+.hero-item {
+    margin-right: 40px;
+}
+
+.hero-item:last-child {
+    margin-right: 0;
+}
+
+/* ================ ABOUT ================= */
+
+.about-container {
+    display: flex;
+}
+.about-list {
+    display: flex;
+}
+
+.about-item {
+    margin-right: 30px;
+}
+
+.about-item:last-child {
+    margin-right: 0;
+}
+
+.about-wrapper {
+    width: 500px;
+    margin-left: auto;
+}
+
+.about-descr {
+    margin-bottom: 40px;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--primary-light-text);
+}
+
+/* ================ PRICE ================== */
+
+.price .title {
+    margin-bottom: 44px;
+    color: var(--primary-dark-text);
+}
+
+.price-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.price-item {
+    flex-basis: calc(100% / 2);
+    padding: 30px 40px;
+}
+
+.price-inner-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.price-inner-item:last-child {
+    margin-bottom: 0;
+}
+
+.price .main-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ================ GALERY ================= */
 
 .galery-list {
@@ -196,3 +328,45 @@ h1, h2, h3, h4, h5, h6, p {
 .footer-test {
     background-color: var(--accent-text-clr);
 }
+
+/* ================== PRICES =================== */
+
+.price {
+    background-color: var(--primary-dark-bg);
+}
+
+
+
+.contacts {
+    background-color: var(--primary-dark-bg);
+}
+
+/* ================== FOOTER =================== */
+
+
+    .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-list {
+    display: flex;
+    align-items: center;
+}
+
+.footer-item {
+    margin-right: 40px;
+}
+
+.footer-item:last-child {
+    margin-right: 0;
+}
+
+
+
