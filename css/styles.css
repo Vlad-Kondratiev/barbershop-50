@@ -137,7 +137,7 @@ p:last-child {
 }
 
 .subtitle-mode-light {
-  color: var(--main-txt--mode-light);
+    color: var(--main-txt--mode-light);
 }
 
 .subtitle-mode-dark {
@@ -193,7 +193,7 @@ p:last-child {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: var(--primary-dark-bg);
+    background-color: var(--primary-bg--mode-dark);
 }
 
 .header-container {    
@@ -230,7 +230,7 @@ p:last-child {
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: var(--primary-dark-text);
+    color: var(--main-txt--mode-dark);
 }
 
 .nav-link:hover,
@@ -245,7 +245,7 @@ p:last-child {
 
 .header-phone:hover,
 .header-phone:focus {
-    color: var(--accent-text-clr);
+    color: var(--accent-cl);
 }
 
 /* ================= HERO ================== */
@@ -319,15 +319,13 @@ p:last-child {
 
 .about-descr {
     margin-bottom: 40px;
-    font-family: var(--main-font);
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.86;
     letter-spacing: 0.02em;
-    color: var(--primary-light-text);
+    color: var(--main-txt--mode-light);
 }
 
-.light-btn {
+.main-btn-mode-light {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -336,21 +334,20 @@ p:last-child {
     color: var(--secondary-light-text);
 }
 
-.light-btn:hover,
-.light-btn:focus {
-    color: var(--primary-dark-text);
-    background-color: var(--accent-text-clr);
+.main-btn-mode-light:hover,
+.main-btn-mode-light:focus {
+    color: var(--primary-txt--mode-dark);
 }
+
 
 /* ================ PRICE ================== */
 
 .price {
-    background-color: var(--primary-dark-bg);
+    background-color: var(--secondary-bg--mode-dark);
 }
 
 .price .title {
     margin-bottom: 44px;
-    color: var(--primary-dark-text);
 }
 
 .price-list {
@@ -380,56 +377,46 @@ p:last-child {
     margin-right: auto;
 }
 
-/* =============== BENEFITS ================ */
-
-.benefits-container {
-    display: flex;
-    align-items: center;
+.price-inner-name,
+.price-inner-cost {
+    color: var(--main-txt--mode-dark);
 }
 
-.benefits-content {
-    flex-basis: calc(100% / 2);
+.price .main-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* =============== ADVANTAGES ================ */
+
+.advantages-quantity {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+    color: var(--secondary-txt--mode-light)
 }
 
 
 /* ================ MASTERS ================ */
 
-.masters-section {
-    background-color: var(--secondary-light-bg);
+.team {
+    background-color: var(--secondary-bg--mode-light);
 }
 
-.masters-list {
-    display: flex;
-    align-items: center;
-}
-
-.masters-item {
-    margin-right: 30px;
-}
-
-.masters-item:last-child {
-    margin-right: 0;
-}
-
-.masters-title {
-    font-family: var(--main-font);
-    font-weight: 400;
+.team-headline {
     font-size: 18px;
     line-height: 1.39;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--secondary-light-text);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--secondary-txt--mode-light)
 }
 
-.masters-text {
-    font-family: var(--main-font);
-    font-weight: 400;
+.team-position {
     font-size: 14px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.02em;
-    color: var(--accent-text-clr);
+    color: var(--accent-cl);
 }
 
 /* ================ GALERY ================= */
@@ -453,30 +440,31 @@ p:last-child {
 
 /* ================= CONTACTS ================== */
 
-.contacts-section {
-    background-color: var(--primary-dark-bg);
+.contacts {
+    background-color: var(--secondary-bg--mode-dark);
 }
 
-.contacts-container .title {
-    color: var(--primary-dark-text);
-}
-
-.contact-item {
-    font-family: var(--secondary-dark-text);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
+.contacts-address {
+    font-style: normal;
 }
 
 .contact-link {
-    font-family: var(--secondary-dark-text);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
+    color: currentColor;
+}
+
+.contacts-link[href^="mailto:"] {
+    text-decoration: underline;
+}
+
+.contacts .uppertitle-mode-dark {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+/* identical to box height */
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--primary-txt--mode-dark);
 }
 
 /* ================== FOOTER =================== */
@@ -506,5 +494,8 @@ p:last-child {
     margin-right: 0;
 }
 
+.footer-copyright {
+    margin-bottom: 0;
+}
 
 
