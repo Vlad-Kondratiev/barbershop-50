@@ -50,6 +50,25 @@
         </div>
     </header>
 
+    <div class="contacts-row container">
+        <ul class="list">
+            <li class="item">
+                <a class="list-link link" href="">
+                    <svg class="icon" width="16" height="12">
+                        <use href="./images/icons/icon-contacts.svg#icon-envelope"></use>
+                    </svg>info@devstudio.com
+                </a>
+            </li>
+            <li class="item">
+                <a class="list-link link" href="">
+                    <svg class="icon" width="10" height="16">
+                        <use href="./images/icons/icon-contacts.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <main>        
         <!-- <!-================================= HERO ====================================- > -->
 
@@ -113,7 +132,7 @@
                 <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
                 <h2 class="title title-mode-dark">Услуги и цены</h2>
                 <ul class="price-list list">
-                    <li class="price-item">
+                    <li class="price-item price-item-left-side">
                         <ul class="price-inner-list list">
                             <li class="price-inner-item"><span class="price-inner-name">Мужская стрижка</span> <span class="price-inner-cost">от 300 грн.</span></li>
                             <li class="price-inner-item"><span class="price-inner-name">Стрижка бороды</span><span class="price-inner-cost">от 200 грн.</span></li>
@@ -121,7 +140,7 @@
                             <li class="price-inner-item"><span class="price-inner-name">Бритье опасной бритвой</span> <span class="price-inner-cost">от 200 грн.</span></li>
                         </ul>
                     </li>
-                    <li class="price-item">
+                    <li class="price-item price-item-right-side">
                         <ul class="price-inner-list list">
                             <li class="price-inner-item"><span class="price-inner-name">Cтрижка у стажера</span><span class="price-inner-cost">от 50 грн.</span></li>
                             <li class="price-inner-item"><span class="price-inner-name">Стрижка под насадку</span><span class="price-inner-cost">от 200 грн.</span></li>
@@ -175,112 +194,117 @@
                 <ul class="list team-list">
                     <li class="team-member">
                         <img class="team-avatar" src="./images/barber-1.jpg" alt="John Smith" width="370" height="346">
-                        <h3 lang="en" class="team-headline">John Smith</h3>
-                        <p class="team-position">Extreme Barber</p>
-                        <ul class="socials list">
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-instagram link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-twitter link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-facebook link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-linkedIn link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-linkedin"></use>
-                                    </svg>
-
-                                </a>
-                            </li>
-                        </ul>
-                
+                        <div class="team-wrapper">
+                            <h3 lang="en" class="team-headline">John Smith</h3>
+                            <p class="team-position">Extreme Barber</p>
+                            <ul class="socials list">
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-instagram link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-twitter link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-facebook link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-linkedIn link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>               
                     </li>
-                    <li class="masters-item">
+                    <li class="team-member">
                         <img class="team-avatar" src="./images/barber-2.jpg" alt="Michele Doe" width="370" height="346">
-                        <h3 lang="en" class="team-headline">Michele Doe</h3>
-                        <p class="team-position">Extreme Barber</p>
-                        <ul class="socials list">
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-instagram link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-twitter link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-facebook link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-linkedIn link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                        
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="team-wrapper">
+                            <h3 lang="en" class="team-headline">Michele Doe</h3>
+                            <p class="team-position">Extreme Barber</p>
+                            <ul class="socials list">
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-instagram link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-twitter link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-facebook link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-linkedIn link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
-                    <li class="masters-item">
+                    <li class="team-member">
                         <img class="team-avatar" src="./images/barber-3.jpg" alt="Alan Black" width="370" height="346">
-                        <h3 lang="en" class="team-headline">Alan Black</h3>
-                        <p class="team-position">Extreme Barber</p>
-                        <ul class="socials list">
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-instagram link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-instagram"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-twitter link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-facebook link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="socials-item">
-                                <a class="socials-link socials-link-linkedIn link" href="">
-                                    <svg class="socials-icon" width="22" height="22">
-                                        <use href="./images/icons/icon-sprite.svg#icon-linkedin"></use>
-                                    </svg>
-                        
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="team-wrapper">
+                            <h3 lang="en" class="team-headline">Alan Black</h3>
+                            <p class="team-position">Extreme Barber</p>
+                            <ul class="socials list">
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-instagram link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-twitter link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-facebook link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="socials-item">
+                                    <a class="socials-link socials-link-linkedIn link" href="">
+                                        <svg class="socials-icon" width="22" height="22">
+                                            <use href="./images/icons/icon-sprite.svg#icon-linkedin"></use>
+                                        </svg>
+                            
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                 </ul>
             </div>
