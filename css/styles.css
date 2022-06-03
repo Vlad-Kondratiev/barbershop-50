@@ -550,8 +550,6 @@ img {
     font-weight: 600;
     font-size: 11px;
     line-height: 15px;
-/* identical to box height */
-
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: var(--primary-txt--mode-dark);
@@ -600,21 +598,20 @@ img {
 }
 
 .contacts-row .link {
-    color: var(--secondary-txt--mode-light);
     display: flex;
     align-items: center;
+    color: var(--secondary-txt--mode-light);
+}
+
+.contacts-row .link:hover,
+.contacts-row .link:focus {
+    color: #ff6c00;
 }
 
 .contacts-row .icon {
     margin-right: 10px;
     fill: currentColor;
-}
-
-.contacts-row .link:hover,
-.contacts-row .link:focus {
-    color: var(--accent-cl);
-}
-
+} 
 
 
 
