@@ -558,7 +558,7 @@ img {
 /* ================== FOOTER =================== */
 
 
-    .footer {
+.footer {
     padding-top: 56px;
     padding-bottom: 56px;
 }
@@ -587,8 +587,8 @@ img {
 }
 
 
-
-.contacts-row .list {
+/* ==== Пример оформления тел/мэйл ==== */
+/* .contacts-row .list {
     display: flex;
     align-items: center;
 }
@@ -611,7 +611,8 @@ img {
 .contacts-row .icon {
     margin-right: 10px;
     fill: currentColor;
-} 
+}  */
+/* ==================================== */
 
 
 
