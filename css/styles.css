@@ -555,6 +555,34 @@ img {
   text-align: center;
 }
 
+.team-thumb {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.team-descr {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  color: var(--primary-txt--mode-dark);
+  background-color: rgba(11, 11, 11, 0.504);
+
+  transform: translateY(100%);
+  transition: transform var(--anim-fast);  
+}
+
+.team-thumb:hover .team-descr {
+  transform: translateY(0%);
+}
+
 .team-wrapper {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -730,7 +758,7 @@ img {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.189);
+  background-color: rgba(0, 0, 0, 0.47);
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
@@ -766,4 +794,93 @@ img {
   border-radius: 50%;
 }
 
+/* ========================= PULSATE ===================== */
 
+.pulsate {
+  position: relative;
+  z-index: 10;
+
+  background-color: #ff6c00;
+}
+
+.pulsate span {
+  position: relative;
+  z-index: 10;
+}
+
+.pulsate::after,
+.pulsate::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+
+  background-color: rgb(255, 106, 0);
+}
+
+.pulsate::after {
+  animation: pulsation 4s 400ms ease-in-out infinite both;
+}
+.pulsate::before {
+  animation: pulsation 4s ease-in-out infinite both;
+}
+
+@keyframes pulsation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* logo anomation */
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
