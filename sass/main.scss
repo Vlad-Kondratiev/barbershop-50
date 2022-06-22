@@ -1,3 +1,33 @@
-body {
-  background-color: rgb(75, 222, 245);
-}
+// ========= variables =========
+
+@import "./variables/variables";
+
+// =========== utils ===========
+
+@import "./utils/mixins";
+@import "./utils/visually-hidden";
+@import "./utils/animation-pulsate";
+
+
+// ======== base styles ========
+
+@import "./base/base";
+
+// ========= components =========
+
+@import "./components/btn";
+@import "./components/form/module";
+@import "./components/container";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/price";
+@import "./components/advantages";
+@import "./components/team";
+@import "./components/galery";
+
+@import "./components/contacts";
+@import "./components/footer";
+// @import "./components/";
+// @import "./components/";

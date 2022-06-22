@@ -1,0 +1,64 @@
+// ======= HEADER =======
+
+.header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: var(--primary-bg--mode-dark);
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-link {
+    margin-right: 70px;
+  }
+  
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-item {
+    margin-right: 40px;
+  }
+  
+  .nav-item:last-child {
+    margin: 0;
+  }
+  
+  .header-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .nav-link,
+  .header-phone {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-txt--mode-dark);
+    transition: color var(--anim-fast);
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: var(--accent-cl);
+  }
+  
+  .header-phone {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-right: 40px;
+    text-transform: uppercase;
+  }
+  
+  .header-phone:hover,
+  .header-phone:focus {
+    color: var(--accent-cl);
+  }
