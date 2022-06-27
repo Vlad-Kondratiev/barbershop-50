@@ -6,6 +6,7 @@ body {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: var(--main-txt--mode-light);
+  overflow-x: hidden;
 }
 
 img {
@@ -35,8 +36,8 @@ img {
 }
 
 .uppertitle::before {
-  margin-right: 20px;
   display: block;
+  margin-right: 20px;
   content: "";
   width: 60px;
   height: 1px;

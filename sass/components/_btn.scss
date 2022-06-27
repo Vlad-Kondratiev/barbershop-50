@@ -1,33 +1,47 @@
 .main-btn {
-    max-width: 350px;
-    min-width: 160px;
-    padding: 12px 20px;
+  max-width: 350px;
+  min-width: 160px;
+  padding: 12px 20px;
   
-    font-family: inherit;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--primary-dark-text);
-    border: 1px solid var(--accent-cl);
-    border-radius: 25px;
-    background-color: transparent;
-    cursor: pointer;
-    transition: background-color var(--anim-fast);
-  }
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--primary-dark-text);
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color var(--anim-fast);
+}
   
-  .main-btn-mode-light {
-    color: var(--primary-txt--mode-light);
-    /* background-color: ; */
-  }
+.main-btn-mode-light {
+  color: var(--primary-txt--mode-light);
+  /* background-color: ; */
+}
   
-  .main-btn-mode-dark {
-    color: var(--primary-txt--mode-dark);
-  }
+.main-btn-mode-dark {
+  color: var(--primary-txt--mode-dark);
+}
 
-  .main-btn:hover,
-  .main-btn:focus {
-    background-color: var(--accent-cl);
-    border: 1px solid var(--accent-cl);
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--accent-cl);
+  border: 1px solid var(--accent-cl);
+}
+
+.main-btn-mode-light {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--secondary-light-text);
+}
+  
+.main-btn-mode-light:hover,
+.main-btn-mode-light:focus {
+  color: var(--primary-txt--mode-dark);
 }

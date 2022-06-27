@@ -1,6 +1,13 @@
-.contacts-form {
-    display: flex;
-    flex-direction: column;
+  .contacts-form {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  .form-field,
+  .form-group,
+  .form-agreement {
+    position: relative;
+    margin-bottom: 44px;
   }
   
   .contacts-wrapper {
@@ -13,21 +20,24 @@
   
   .form-label {
     position: relative;
+    flex-basis: 50%;
   }
   
   .form-input {
-    display: inline-block;
-    width: 260px;
+    display: block;
+    width: 100%;
     padding: 10px;
     color: var(--primary-bg--mode-light);
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
     outline: transparent;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    transition: border-color var();
   }
   
   .form-input:hover,
-  .form-input:focus {
+  .form-input:focus,
+  .form-input:not(:placeholder-shown) {
     border-color: var(--primary-txt--mode-dark);
     color: var(--primary-bg--mode-light);
   }
