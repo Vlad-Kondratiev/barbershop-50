@@ -1,6 +1,6 @@
-// $icons: "facebook", "instagram", "twitter", "linkedin";
-// @each $iconname in $icons {
-//     .icon-#{$iconname} {
-//         background-color: var(--accent-cl);
-//     }
-// }
+$icons: "facebook", "instagram", "twitter", "linkedin";
+@each $iconname in $icons {
+    .icon-#{$iconname} {
+        background-color: var(--accent-cl);
+    }
+}

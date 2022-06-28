@@ -1,10 +1,11 @@
-.hero {
+  .hero {
     background-color: var(--primary-bg--mode-dark);
   }
   
   .hero-list {
     display: flex;
     align-items: center;
+    position: relative;
   }
   
   .hero-item {
@@ -17,10 +18,12 @@
   
   .hero-title {
     margin-bottom: 20px;
+
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 72px;
     line-height: 1.18;
+
     letter-spacing: 0.05em;
     color: var(--primary-txt--mode-dark);
   }
@@ -33,6 +36,7 @@
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
+    
     letter-spacing: 0.1em;
     color: var(--primary-txt--mode-dark);
     background-color: transparent;
