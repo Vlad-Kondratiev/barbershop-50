@@ -1,13 +1,13 @@
 :root {
     /*=========== Основные шрифты ===========*/
   
-    --main-font: "Open Sans", sans-serif;
-    --secondary-font: "Raleway", sans-serif;
+    // --main-font: "Open Sans", sans-serif;
+    // --secondary-font: "Raleway", sans-serif;
     --accent-cl: #ff6c00;
   
     /*========== Светлая тема текста =========*/
   
-    --primary-txt--mode-light: #555555;
+    // --primary-txt--mode-light: #555555;
     --secondary-txt--mode-light: #303030;
     --main-txt--mode-light: #555555;
   
@@ -31,3 +31,10 @@
   
     --anim-fast: 250ms ease-in;
   }
+
+  // =========== ПЕРЕМЕННЫЕ SASS ============
+
+  $main-font: "Open Sans", sans-serif;
+  $secondary-font: "Raleway", sans-serif;
+
+  $primary-txt--mode-light: #555555;
